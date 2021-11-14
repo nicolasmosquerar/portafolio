@@ -10,3 +10,9 @@ class post(models.Model):
     descripcion=TextField()
     imagen=ImageField(upload_to='blog/images')
     fecha= DateField()
+    
+    def __str__(self):
+        
+        txt="{0}"
+        
+        return str.format(self.titulo)

@@ -12,5 +12,11 @@ class proyecto(models.Model):
     descripcion =   TextField(max_length=255)
     imagenes    =   ImageField(upload_to='portafolio/imagenes/')
     url =  URLField(blank=True)
+    
+    def __str__(self):
+        
+        txt="{0}"
+        
+        return str.format(self.titulo)
 
 
