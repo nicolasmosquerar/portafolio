@@ -1,0 +1,12 @@
+
+
+body{
+
+background: rgb(24, 23, 23);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
